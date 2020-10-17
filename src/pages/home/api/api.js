@@ -24,8 +24,12 @@ var API = {
 
 
     add: async function(url, data){
-        var data = await fetch(this.make_url(url), {method: 'PATCH'});
-        return data.json();
+        var ret = await fetch(this.make_url(url), {
+            method: 'POST', 
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
+        });
+        return ret.json();
     },
 
     create_contract: async function(data){
