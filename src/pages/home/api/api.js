@@ -25,6 +25,12 @@ var API = {
         var users = await this.fetch(url);
         return users;
     },
+
+    get_contract_types: async function(){
+        var url = 'contract_types.json';
+        var contract_types = await this.fetch(url);
+        return contract_types;
+    },
 };
 
 export default API
