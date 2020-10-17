@@ -12,7 +12,7 @@ function App() {
     <Route exact path="/" component={LoginIn} />
     <Route path="/home" component={Home} />
     <Route path="/createContract" component={CreateContract} />
-    <Route path="/home" component={Home} />
+    <Route path="/information" component={Home} />
       </Switch>
     </div>
     </BrowserRouter>

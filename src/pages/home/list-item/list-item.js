@@ -41,7 +41,7 @@ const ListItem = ({
               >
         <i className="fa" />
       </button>
-      <Link to='information'><p  style={{color:'#1B89CD'}}>Подробнее о сделке ...</p></Link>
+      <Link to='/information'><p  style={{color:'#1B89CD'}}>Подробнее о сделке ...</p></Link>
     </span>
   );
 };

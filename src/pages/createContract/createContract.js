@@ -1,10 +1,6 @@
 import React,{Component} from "react";
-<<<<<<< HEAD
-import {API} from "../home/api/api";
-=======
-import API from "..\\home\\api\\api"
+import API from "..\\home\\api\\api";
 import CustomSelect from "..\\home\\custom-select\\custom-select"
->>>>>>> 1d17b071085e916d976d002c9ff21efe77c3aa20
 
 export class CreateContract extends Component{
 
@@ -14,11 +10,7 @@ export class CreateContract extends Component{
     }
 
     componentDidMount(){
-<<<<<<< HEAD
-        API.fetch_users.then((body)=>{
-=======
         API.get_users().then((body)=>{
->>>>>>> 1d17b071085e916d976d002c9ff21efe77c3aa20
             this.setState({
                users:body
             });
