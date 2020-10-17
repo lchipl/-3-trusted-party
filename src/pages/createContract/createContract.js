@@ -1,10 +1,26 @@
-import React from "react";
-import API from "..'\\home\\api\\api"
+import React,{Component} from "react";
+import API from "..home\\api\\api"
 
-export const CreateContract = () =>{
+export class CreateContract extends Component{
+
+    state={
+        users:null
+    }
+
+    componentDidMount(){
+        API.then((body)=>{
+            this.setState({
+               users:body
+            })
+        })
+    }
+    
+
+    render(){
     return(
         <div>
-			loading...
+			{this.state.users}
         </div>
     );
+    }
 }
