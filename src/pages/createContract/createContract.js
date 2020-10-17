@@ -1,9 +1,5 @@
 import React,{Component} from "react";
-<<<<<<< HEAD
-import API from "..\\home\\api\\api";
-=======
 import API from "..\\home\\api\\api"
->>>>>>> facdc187ba30bc7dfb293d876ff54137071cf355
 import CustomSelect from "..\\home\\custom-select\\custom-select"
 
 export class CreateContract extends Component{
