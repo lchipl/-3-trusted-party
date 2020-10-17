@@ -35,6 +35,7 @@ var API = {
     create_contract: async function(data){
         var url = 'contracts.json';
         data.id = Math.random()*10000000;
+        data.date_cr = new Date.toLocaleDateString();
         var response = await this.add(url, data);
         return response;
     },
