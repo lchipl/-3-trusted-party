@@ -16,15 +16,15 @@ var API = {
         
 
         // return ret;
-        var data = await fetch(url);
+        var data = await fetch(this.db_url+url);
         return data.json();
     },
 
-    fetch_users: async function(){
-        var url = this.db_url+'users';
+    get_users: async function(){
+        var url = 'users.json';
         var users = await this.fetch(url);
         return users;
     },
 };
 
-export {API}
+export default API
