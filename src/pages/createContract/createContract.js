@@ -20,7 +20,7 @@ export class CreateContract extends Component{
 		});
     }
 	
-	createContract(event){
+	createContract(){
 		var inputs = document.querySelectorAll('.form input, .form select');
 		var data = {};
 		for(var i = 0; i < inputs.length; i++){
