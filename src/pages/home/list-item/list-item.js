@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 import './list-item.css';
 
 const ListItem = ({ 
@@ -28,7 +28,6 @@ const ListItem = ({
       <p style={{textDecoration:'underline'}}><span className="typeValues">Тип сделки:</span> Покупка </p>
       <p><span className="typeValues">Дата совершения:</span> 17.10.2020</p>
       <p><span className="typeValues">Статус: </span> Завершён</p>
-
       <button type="button"
               className="btn btn-outline-success btn-sm float-right"
               onClick={handleImportant}
@@ -42,6 +41,7 @@ const ListItem = ({
               >
         <i className="fa" />
       </button>
+      <Link to='information'><p  style={{color:'#1B89CD'}}>Подробнее о сделке ...</p></Link>
     </span>
   );
 };

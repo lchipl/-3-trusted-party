@@ -147,7 +147,7 @@ render() {
         <ItemStatusFilter handleSetFilter={this.handleSetFilter} filter={filter} /> 
       </div>
 
-      <List todos={Visible}
+      <List items={Visible}
        handleImportant={this.handleImportant}
        handleDone={this.handleDone}
        createNewElement={this.createNewElement}

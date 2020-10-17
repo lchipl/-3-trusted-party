@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import API from "..home\\api\\api"
+import {API} from "../home/api/api";
 
 export class CreateContract extends Component{
 
@@ -8,7 +8,7 @@ export class CreateContract extends Component{
     }
 
     componentDidMount(){
-        API.then((body)=>{
+        API.fetch_users.then((body)=>{
             this.setState({
                users:body
             })

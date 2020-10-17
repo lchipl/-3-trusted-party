@@ -17,7 +17,7 @@ var API = {
 
         // return ret;
         var data = await fetch(url);
-        return data.json();
+        return await data.json();
     },
 
     fetch_users: async function(){

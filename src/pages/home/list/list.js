@@ -3,9 +3,9 @@ import React from 'react';
 import ListItem from '../list-item';
 import './list.css';
 
-const TodoList = ({ todos,handleImportant,handleDone, onDeleteElem }) => {
+const TodoList = ({ items,handleImportant,handleDone, onDeleteElem }) => {
 
-  const elements = todos.map((item,index) => {
+  const elements = items.map((item,index) => {
     const { id, ...itemProps } = item;
 
     return (
