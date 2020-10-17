@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom"
 export const LoginIn = () =>{
 
 
@@ -17,7 +17,7 @@ export const LoginIn = () =>{
             <form className="login_form">
                 <input type="text" placeholder="Логин" />
                 <input type="text" placeholder="Пароль" />
-                <button >Войти</button>
+                <Link to='/home'><button > Войти</button></Link>
                  
             </form>
             </div>

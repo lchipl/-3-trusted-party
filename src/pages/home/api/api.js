@@ -16,8 +16,13 @@ var API = {
         
 
         // return ret;
+<<<<<<< HEAD
+        var data = await fetch(url);
+        return await data.json();
+=======
         var data = await fetch(this.db_url+url);
         return data.json();
+>>>>>>> 1d17b071085e916d976d002c9ff21efe77c3aa20
     },
 
     get_users: async function(){
