@@ -25,6 +25,7 @@ class PhoneNumberVC: UIViewController {
             if error != nil {
                 print(error?.localizedDescription ?? "Unknown error")
             } else {
+                user.phoneNumber = self.phoneNubmerTextField.text!
                 self.showCodeValidVC(verificationID: verificationID!)
             }
         }

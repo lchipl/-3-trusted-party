@@ -25,6 +25,8 @@ class CodeValidVC: UIViewController {
                 ac.addAction(cancel)
                 self.present(ac, animated: true)
             } else {
+                UserDefaults.standard.set(user.phoneNumber, forKey: "phoneNumberKey")
+                UserDefaults.standard.synchronize()
                 self.showConentVC()
             }
         }
@@ -35,7 +37,7 @@ class CodeValidVC: UIViewController {
     
     private func showConentVC() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let dvc = storyboard.instantiateViewController(identifier: "ContentVC") as! ContentVC
+        let dvc = storyboard.instantiateViewController(identifier: "CreateVC") as! CreateVC
         self.present(dvc, animated: true)
         
     }
@@ -48,9 +50,9 @@ class CodeValidVC: UIViewController {
 
 
     private func setupConfig() {
+        codeTextView.textColor = .black
         checkCodeButton.alpha = 0.5
         checkCodeButton.isEnabled = false
-        
         codeTextView.delegate = self
     }
 }
