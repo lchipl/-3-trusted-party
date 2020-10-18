@@ -1,6 +1,6 @@
 import React,{Component} from "react";
-import API from "..\\home\\api\\api"
-import CustomSelect from "..\\home\\custom-select\\custom-select"
+import API from "..//home//api//api"
+import CustomSelect from "..//home//custom-select//custom-select"
 
 export class CreateContract extends Component{
 
